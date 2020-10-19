@@ -72,19 +72,24 @@ method: GET
 data type: JSON
 method: POST
 data: 
-{
-    "CoopID": 1, 
-    "json": "{\"Debug\":\"0\",\n\"Doors\":\n{\"Debug\":\"0\",\"OpenByTime\":true,\"OpenByDaylight\":true,\"OpenTime\":\"05:54:00\",\"CloseTime\":\"11:03:00\",\"TempMore\":19,\"TempLess\":31},\n\"Heating\":\n{\"Debug\":\"0\",\"SwitchOn\":\"23\",\"SwitchOff\":\"23\"},\n\"Light\":\n{\"Debug\":\"0\",\"OpenByTime\":false,\"OpenBySensor\":true,\"OpenFrom\":\"05:00:00\",\"CloseBefore\":\"12:12:00\"},\"\nVent\":\n{\"Debug\":\"0\",\"TimeOn\":\"38\",\"TimeOff\":\"41\",\"TempThreshold\":\" 21\",\"TimeMode\":\" 0\"}}"
-}
+{"Debug":"0",
+"Doors":
+{"Debug":"0","OpenByTime":true,"OpenByDaylight":true,"OpenTime":"05:54:00","CloseTime":"11:03:00","TempMore":19,"TempLess":31},
+"Heating":
+{"Debug":"0","SwitchOn":"23","SwitchOff":"23"},
+"Light":
+{"Debug":"0","OpenByTime":false,"OpenBySensor":true,"OpenFrom":"05:00:00","CloseBefore":"12:12:00"},"
+Vent":
+{"Debug":"0","TimeOn":"38","TimeOff":"41","TempThreshold":" 21","TimeMode":" 0"}}
 ```
 
 5) **Получить список курятников **
 
      uri: /api/user/coop 
-```
-data type: JSON
-method: GET
-```
+    ```
+    data type: JSON
+    method: GET
+    ```
 
 6) **Для админа**
 
@@ -105,7 +110,6 @@ method: GET
    
    uri: /api/user/coop
        
-  
     data type: JSON
     method: DELETE
     data:
@@ -113,6 +117,3 @@ method: GET
     "CoopID": 2,
     "UserID": 1
     }
-    
-     
-   
