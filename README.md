@@ -68,6 +68,8 @@ method: GET
 
 **Редактирование:**
 
+uri: /api/settings
+
 ```
 data type: JSON
 method: POST
